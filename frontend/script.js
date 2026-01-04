@@ -8,7 +8,7 @@
 // =============================================================================
 
 const CONFIG = {
-    apiEndpoint: localStorage.getItem('apiEndpoint') || 'http://localhost:8000',
+    apiEndpoint: localStorage.getItem('apiEndpoint') || 'https://nao-ai.onrender.com/',
     model: localStorage.getItem('model') || 'deepseek/deepseek-chat',
     temperature: parseFloat(localStorage.getItem('temperature')) || 0.7,
     voiceOutput: localStorage.getItem('voiceOutput') === 'true',
@@ -548,7 +548,7 @@ function exportChat() {
     }
 
     // Create text content
-    let content = 'AI Chatbot - Chat Export\n';
+    let content = 'Nao AI - Chat Export\n';
     content += `Generated: ${new Date().toLocaleString()}\n`;
     content += '='.repeat(50) + '\n\n';
 
